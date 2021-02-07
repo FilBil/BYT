@@ -1,0 +1,19 @@
+﻿@{ 
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+<div class="parcial-handler parcial-handler-size">
+    <ul class="parcial parcial-size parcial-flex">
+        <li class="parcial-element  parcial-element-size">
+            <a class="parcial-link" href='/Identity/Account/Login'>Zaloguj się</a>
+        </li>
+        <li class="parcial-element parcial-element-size">
+            <a class="parcial-link" href='/Identity/Account/Register'>Rejestracja</a>
+        </li>
+    </ul>
+</div>
+<div class="card-content">
+    @RenderBody()
+</div>
+@section Scripts{
+@RenderSection("Scripts", required: false)
+ }

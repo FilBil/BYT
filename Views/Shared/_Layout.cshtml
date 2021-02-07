@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - VetReserve</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/forms.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/parcial.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <header class="navbar-style">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-custom border-bottom box-shadow mb-3#DFEEE0">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">VetReserve</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Offer">Usługi</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Weterynarze">Weterynarze</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Contact">Kontakt</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Visit">Wizyta</a>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <partial name="_LoginPartial.cshtml" />
+                </div>
+            </div>
+        </nav>
+    </header>
+       
+    <div class="container container-size">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+ 
+    <footer class="border-top footer text-muted">
+        <div class="container">
+             2020 - VetReserve - <a asp-area="" asp-controller="Home" asp-action="Contact">Kontakt</a>
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

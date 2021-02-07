@@ -1,0 +1,35 @@
+@import url("colors.css");
+
+/* Form */
+.form-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+/* Login */
+.login-form-size {
+    width: 50%;
+}
+
+/* Register */
+.register-form-size {
+    width: 50%;
+    margin: 0;
+}
+
+/* Button Color */
+.btn-size {
+    width: 30% !important;
+}
+
+.btn-color {
+    background: var(--main) !important;
+    color: var(--font) !important;
+}
+
+.btn-border {
+    border-color: var(--main) !important;
+}

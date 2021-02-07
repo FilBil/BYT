@@ -1,0 +1,57 @@
+﻿@import url("colors.css");
+
+/* Parcial Handler */
+.parcial-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.parcial-handler-size {
+    height: 4vh;
+    min-height: 40px;
+}
+
+/* Parcial */
+.parcial {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: var(--main);
+}
+
+.parcial-size {
+    width: 60%;
+    height: 100%;
+}
+
+.parcial-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Parcial Element */
+.parcial-element {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.parcial-element-size {
+    width: 50%;
+    height: 100%;
+}
+
+/* Parcial Link */
+.parcial-link {
+    color: var(--font);
+    transition: color .3s;
+}
+
+.parcial-link:hover {
+    color: var(--suplement);
+    text-decoration: none;
+}
+
